@@ -42,6 +42,13 @@ if __name__ == "__main__":
       username = logtexts[8]
       ipaddr = logtexts[10]
       port = logtexts[12]
+   elif args[1] == 'N0':
+      url = url_NG
+      color = "#A30100"
+      hostname = logtexts[3]
+      username = logtexts[7]
+      ipaddr = logtexts[9]
+      port = logtexts[11]
    elif args[1] == 'N1':
       url = url_NG
       color = "#A30100"
