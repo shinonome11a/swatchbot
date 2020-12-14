@@ -35,6 +35,7 @@ if __name__ == "__main__":
    logtexts = logtext.split()
    url = ""
    color = ""
+   reason = ""
    if args[1] == 'Y':
       url = url_OK
       color = "#2EB886"
@@ -49,6 +50,7 @@ if __name__ == "__main__":
       username = logtexts[7]
       ipaddr = logtexts[9]
       port = logtexts[11]
+      reason = " reason: Invalid user"
    elif args[1] == 'N1':
       url = url_NG
       color = "#A30100"
@@ -56,6 +58,7 @@ if __name__ == "__main__":
       username = logtexts[10]
       ipaddr = logtexts[12]
       port = logtexts[14]
+      reason = " reason: Failed publickey or password for invalid user"
    else:
       url = url_NG
       color = "#A30100"
@@ -63,6 +66,7 @@ if __name__ == "__main__":
       username = logtexts[8]
       ipaddr = logtexts[10]
       port = logtexts[12]
+      reason = " reason: Failed publickey or password"
 
 
 
@@ -78,7 +82,7 @@ if __name__ == "__main__":
 					"type": "section",
 					"text": {
 						"type": "mrkdwn",
-						"text": "System is received an SSH connection at " + hostname + "."
+						"text": "System is received an SSH connection at " + hostname + reason + "."
 					}
 				},
 				{
