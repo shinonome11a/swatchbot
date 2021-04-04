@@ -75,7 +75,7 @@ if __name__ == "__main__":
    data = {
 	"attachments": [
 		{
-        "fallback": "System is received an SSH connection at " + hostname + ".",
+        "fallback": hostname + " is received an SSH connection from " + ipaddr + "(" + str(reverse_lookup(ipaddr)) + ")",
         "color": color,
 			"blocks": [
 				{
