@@ -7,6 +7,7 @@ import socket
 import sys
 
 
+# ここにslack webhookのURLを記入する
 url_OK = ''
 url_NG = ''
 
@@ -14,7 +15,7 @@ url_NG = ''
 
 
 ##############################################################################################
-# 逆引き
+# DNS逆引き
 def reverse_lookup(ip):
    try:
       return socket.gethostbyaddr(ip)[0]
