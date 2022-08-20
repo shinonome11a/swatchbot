@@ -10,6 +10,7 @@ auth.logからsshのログインを検出してslackに通知を飛ばすbot<br>
   - 各種ファイルが`/etc/swatch`以下に配備されます
   - reboot時に自動起動するためのcronが`/etc/cron.d/swatch`に配備されます。
 - `/etc/swatch/scripts/accessbot.py`に、slack webhookのURLを記入して保存します
+  - 紛らわしいですがconf.d配下ではなく、scripts配下のスクリプトを直接編集します。
   - `url_OK = ''`となっているところと`url_NG = ''`となっているところがあります。ログイン成功時と失敗時で通知先chを分けたい場合はそれぞれに別のURLを記入してください。
   
 ## 実行
