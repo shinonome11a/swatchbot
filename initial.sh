@@ -2,7 +2,7 @@
 
 # install swatch
 echo '% sudo apt install swatch'
-sudo apt update && sudo apt install swatch
+sudo apt update && sudo apt install -y swatch
 
 # copy original script and swatch config
 echo '% sudo mkdir /etc/swatch'
