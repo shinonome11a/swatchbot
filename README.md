@@ -14,5 +14,5 @@ auth.logからsshのログインを検出してslackに通知を飛ばすbot<br>
   - `url_OK = ''`となっているところと`url_NG = ''`となっているところがあります。ログイン成功時と失敗時で通知先chを分けたい場合はそれぞれに別のURLを記入してください。
   
 ## 実行
-- root権限で`/usr/bin/swatchdog --daemon　-c /etc/swatch/conf.d/auth.log.conf -t /var/log/auth.log > /dev/null`と入力して実行してください。
+- root権限で`/usr/bin/swatchdog --daemon -c /etc/swatch/conf.d/auth.log.conf -t /var/log/auth.log > /dev/null`と入力して実行してください。
 - 上記cronでも同様のコマンドが実行されます。
